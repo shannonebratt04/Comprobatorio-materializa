@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprobatorio3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <style>
+       *{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width: 100%;
+}
+main{
+   margin-top: 20px;
+   margin-left: 15%;
+   margin-right: 50px;
+   margin-bottom: 20px;
+}
+ 
+ body{
+ background-image: url("../images/background-01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;   
+ }
+
+ .responsive-img{
+    transform: translateY(10px);
+}
+
+
+.row{
+
+    background-color: none;
+font-weight: bold;
+font-size: 20pt;  
+transform: translateY(50px);
+}
+
+.input-field{
+    border-radius: 40px;
+    background-color:#f3e5f5 ;
+    border-width: 50pt;
+}
+
+.carousel{
+    width: 50%;
+}
+
+
+.modal-content{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.modal{
+height: auto;
+background-color: #b39ddb;
+}
+
+.container{
+  margin-top: 60px;
+}
+
+@media (max-width: 1024px) {
+     
+     #banner-season{
+      
+         background-image: url('./images/background-01.png');
+     }
+    
+ }
+ 
+ @media (max-width: 768px) {
+ 
+  body{
+background-image:url('../images/fondo2-01.jpg');
+background-color:#f3e5f5;;
+  } 
+ }
+ 
+ @media (max-width: 480px) {
+    body{
+background-image: url('../images/fondocell-01.jpg');
+background-color:#f3e5f5;
+  }
+
+}   
+   
+   </style>
+   
+<body>
+<!--barra inicio-->
+<header>
+    <div class="container">
+        
+<nav class="nav-extended transparent">
+<div class="nav-wrapper">
+<img class="responsive-img" src="./images/logosi-01.png">
+<a class="brand-logo grey-text text-darken-4">Sitica</a>
+<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons purple-text">menu
+    
+</i></a>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a>Home</a></li>
+<li><a>Products</a></li>
+<li><a>Support</a></li>
+<li><a> about</a></li>
+<button class="btn modal-trigger purple" data-target="login">Login</button>
+
+<div id="login"class="modal">
+<div class="modal-content">
+    <div class="row">
+        <h4 class="purple-text text-darken-4 col s10">Inicia Sesión</h4>
+        <div class="row">
+            <div class="input-field col s10">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+              <div class="row">
+                <div class="input-field col s10">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+            <div class="container">
+              <a href="" class="btn modal-close purple">Login</a>
+          <a href="" class="btn modal-close purple">cerrar</a>
+            </div>
+          </div>   
+</div>
+</div>
+</ul>
+</div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+<li><a href="sass.html">Sass</a></li>
+<li><a href="badges.html">Components</a></li>
+<li><a href="collapsible.html">JavaScript</a></li>
+</ul>
+    </div>
+</header>
+ 
+
+<!-- MAIN-->
+<main>
+
+<div class="row">
+   
+<p class="col s8 grey-text text-lighten-1">DO YOU EVER WORRY ABOUT.</p>
+<h4 class=" col s12 m8 l6 grey-text text-darken-2">We are going to launch things that helps to improve </h4>
+      <div class="col s4">
+
+           
+            <div class="carousel carousel-slider  col s12 m8 l6">
+                <a class="carousel-item"><img src="./images/atica-01.png"><p href="#">Ver más</p></a>
+                <a class="carousel-item"><img src="./images/citica-01.png"><p href="#">Ver más</p></a>
+                <a class="carousel-item"><img src="./images/sitica-01.png"><p href="#">Ver más</p></a>
+            </div>
+            
+        
+    </div>  
+
+    
+    
+
+  
+
+</div>
+
+<div class="row">
+  <form class="col s9">
+  <div class="row2">
+  <div class="input-field col s12 m12 l8">
+  <i class="material-icons prefix purple-text text-darken-4">send</i>
+  <input id="icon_prefix" type="text" class="validate" >
+  <label for="icon_prefix ">Your email address</label>
+  </div>  
+  </form>
+  </div>
+</main>
+
+
+<footer></footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems,{
+        duration: 500,
+    } );
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+ </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

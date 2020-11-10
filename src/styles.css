@@ -1,0 +1,70 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width: 100%;
+}
+main{
+   margin-top: 20px;
+   margin-left: 15%;
+   margin-right: 10px;
+   margin-bottom: 20px;
+}
+ 
+ body{
+ background-image: url("../images/background-01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;   
+ }
+
+ .responsive-img{
+    transform: translateY(10px);
+}
+
+
+.row{
+
+    background-color: none;
+font-weight: bold;
+font-size: 20pt;  
+transform: translateY(50px);
+}
+
+.input-field{
+    border-radius: 40px;
+    background-color:#f3e5f5 ;
+    border-width: 50pt;
+}
+ 
+.carousel{
+   height: 50%;
+}
+
+@media (max-width: 1024px) {
+     
+     #banner-season{
+      
+         background-image: url('./images/background-01.png');
+     }
+    
+ }
+ 
+ @media (max-width: 768px) {
+ 
+  body{
+background-image:url('../images/fondo2-01.jpg');
+background-color:#f3e5f5;;
+  } 
+ }
+ 
+ @media (max-width: 480px) {
+    body{
+background-image: url('../images/fondocell-01.jpg');
+background-color:#f3e5f5;
+  }
+
+}   
+   
+ 
